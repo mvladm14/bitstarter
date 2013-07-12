@@ -10,7 +10,7 @@ var array = fs.readFileSync('index.html').toString().split("\n");
 app.get('/', function(request, response) {
   //response.send(buffer.toString());
 for (i in array) {
-    responde.send(array[i]);
+    response.send(array[i]);
 }
 });
 
